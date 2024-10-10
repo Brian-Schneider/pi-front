@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Job Appointments</h1>
+    <div id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="appointments" style="display:none;">
+        <h2>Appointments</h2>
+        <form id="appointmentForm">
+            <input type="text" id="job" placeholder="Job Description" required>
+            <input type="datetime-local" id="datetime" required>
+            <button type="submit">Create Appointment</button>
+        </form>
+        <div id="appointmentList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
