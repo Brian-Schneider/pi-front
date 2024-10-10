@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 loginDiv.style.display = 'none';
                 appointmentsDiv.style.display = 'block';
             } else {
+                console.log(data);
                 alert('Invalid credentials');
             }
         })
